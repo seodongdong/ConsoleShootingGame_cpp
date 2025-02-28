@@ -1,0 +1,4 @@
+﻿  Player.cpp
+C:\Users\User\Downloads\ConsoleShooting-main\Player.cpp(11,2): error C2065: 'bullet': 선언되지 않은 식별자입니다.
+C:\Users\User\Downloads\ConsoleShooting-main\Player.cpp(12,2): error C2065: 'bullet': 선언되지 않은 식별자입니다.
+C:\Users\User\Downloads\ConsoleShooting-main\Player.cpp(13,2): error C2065: 'bullet': 선언되지 않은 식별자입니다.
