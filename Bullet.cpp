@@ -47,8 +47,8 @@ void Bullet::Clipping()
 
 void Bullet::Enable(int x, int y)
 {
-	this->x = 0;
-	this->y = 0;
+	this->x = x;
+	this->y = y;
 	isAlive = true;
 }
 
@@ -59,5 +59,12 @@ void Bullet::Disable()
 
 void CreateBullet(int x, int y)
 {
-	
+	for (int i = 0; i < D_BULLET_MAX; i++)
+	{
+		if (bullets[i].isAlive == false)
+		{
+			bullets[i].Enable(x, y);
+			break;
+		}
+	}
 }

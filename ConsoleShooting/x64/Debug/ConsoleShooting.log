@@ -1,4 +1,11 @@
-﻿  Player.cpp
-C:\Users\User\Downloads\ConsoleShooting-main\Player.cpp(11,2): error C2065: 'bullet': 선언되지 않은 식별자입니다.
-C:\Users\User\Downloads\ConsoleShooting-main\Player.cpp(12,2): error C2065: 'bullet': 선언되지 않은 식별자입니다.
-C:\Users\User\Downloads\ConsoleShooting-main\Player.cpp(13,2): error C2065: 'bullet': 선언되지 않은 식별자입니다.
+﻿  Bullet.cpp
+  ConsoleFramework.cpp
+C:\Users\USER\Documents\GitHub\ConsoleShootingGame_cpp\ConsoleFramework.cpp(48,17): warning C4838: 'int'에서 'SHORT'(으)로의 변환에는 축소 변환이 필요합니다.
+C:\Users\USER\Documents\GitHub\ConsoleShootingGame_cpp\ConsoleFramework.cpp(48,19): warning C4838: 'int'에서 'SHORT'(으)로의 변환에는 축소 변환이 필요합니다.
+C:\Users\USER\Documents\GitHub\ConsoleShootingGame_cpp\ConsoleFramework.cpp(54,13): warning C4267: '초기화 중': 'size_t'에서 'int'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+C:\Users\USER\Documents\GitHub\ConsoleShootingGame_cpp\ConsoleFramework.cpp(68,17): warning C4838: 'int'에서 'SHORT'(으)로의 변환에는 축소 변환이 필요합니다.
+C:\Users\USER\Documents\GitHub\ConsoleShootingGame_cpp\ConsoleFramework.cpp(68,19): warning C4838: 'int'에서 'SHORT'(으)로의 변환에는 축소 변환이 필요합니다.
+  코드를 생성하고 있습니다...
+  LINK : C:\Users\USER\Documents\GitHub\ConsoleShootingGame_cpp\x64\Debug\ConsoleShooting.exe을(를) 찾을 수 없거나 마지막 증분 링크에 의해 빌드되지 않았습니다. 전체 링크를 수행하고 있습니다.
+ConsoleFramework.obj : error LNK2005: "class Bullet * bullets" (?bullets@@3PAVBullet@@A)이(가) Bullet.obj에 이미 정의되어 있습니다.
+C:\Users\USER\Documents\GitHub\ConsoleShootingGame_cpp\x64\Debug\ConsoleShooting.exe : fatal error LNK1169: 여러 번 정의된 기호가 있습니다.

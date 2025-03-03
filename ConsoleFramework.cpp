@@ -4,7 +4,9 @@ int screenIndex;
 HANDLE hScreen[2];
 
 Player player;		// 객체 생성 (인스턴스)
-Bullet bullet;
+
+
+
 
 void Init()
 {
@@ -22,13 +24,12 @@ void Init()
 void Update()
 {
 	player.Update();
-	bullet.Update();
+
 }
 void Draw()
 {
 	ClearScreen();
 	player.Draw();
-	bullet.Draw();
 	Flip();
 }
 void Release()
