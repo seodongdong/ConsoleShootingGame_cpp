@@ -1,25 +1,10 @@
 #pragma once
-class Bullet
+class Bullet : public Unit
 {
 public:
 	Bullet();
 	~Bullet();
 
-	int x;
-	int y;
-	char body;
-	WORD fColor;
-	WORD bColor;
-	bool isAlive;
-
-	void Update();
-	void Draw();
-
-	void Move();
-	void Clipping();
-
-	void Enable(int x, int y);
-	void Disable();
+	void Move() override;
+	void Clipping() override;	
 };
-
-void CreateBullet(int x, int y);

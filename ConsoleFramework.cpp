@@ -2,11 +2,7 @@
 
 int screenIndex;
 HANDLE hScreen[2];
-
-Player player;		// 객체 생성 (인스턴스)
-
-
-
+GameMng gameMng;		//모든 오브젝트를 관리하는 파일
 
 void Init()
 {
@@ -19,17 +15,15 @@ void Init()
 
 	SetConsoleCursorInfo(hScreen[0], &cci);
 	SetConsoleCursorInfo(hScreen[1], &cci);
-
 }
 void Update()
 {
-	player.Update();
-
+	gameMng.Update();
 }
 void Draw()
 {
 	ClearScreen();
-	player.Draw();
+	gameMng.Draw();
 	Flip();
 }
 void Release()

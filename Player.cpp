@@ -2,11 +2,10 @@
 
 Player::Player()
 {
+	isAlive = true;
 	x = 60;
 	y = 15;
 	body = 'A';
-	fColor = WHITE;
-	bColor = BLACK;
 }
 
 Player::~Player()
@@ -15,16 +14,10 @@ Player::~Player()
 
 void Player::Update()
 {
-	Move();
-	Clipping();
+	Unit::Update();		// 부모클래스의 함수를 호출. (같은 내용일 때)
 
 	if (GetAsyncKeyState(VK_SPACE))
-		CreateBullet(x, y);
-}
-
-void Player::Draw()
-{
-	DrawChar(x, y, body, fColor, bColor);
+		gameMng.CreateBullet(x, y);
 }
 
 void Player::Move()
