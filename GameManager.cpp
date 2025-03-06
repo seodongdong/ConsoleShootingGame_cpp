@@ -1,5 +1,10 @@
 #include "include.h"
 // 콘솔프레임에서 관리하던 update, draw를 관리해주는 파일
+// 싱글톤 : GameMng 업그레이드
+// 유한상태기계 (FSM) : 메뉴화면, 게임화면...
+// FMOD : 사운드
+// 자료구조 : 스택, 큐, 리스트 구현
+// 오브젝트 풀링 업그레이드...
 
 GameMng::GameMng()
 {
@@ -55,6 +60,8 @@ void GameMng::Draw()
 	{
 		effects[i].Draw();
 	}
+
+	text.Draw();
 }
 
 void GameMng::CreateBullet(int x, int y)

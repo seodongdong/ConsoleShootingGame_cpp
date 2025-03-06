@@ -2,7 +2,6 @@
 
 int screenIndex;
 HANDLE hScreen[2];
-GameMng gameMng;		//모든 오브젝트를 관리하는 파일
 
 void Init()
 {
@@ -18,12 +17,12 @@ void Init()
 }
 void Update()
 {
-	gameMng.Update();
+	GameMng::GetIns()->Update();
 }
 void Draw()
 {
 	ClearScreen();
-	gameMng.Draw();
+	GameMng::GetIns()->Draw();
 	Flip();
 }
 void Release()

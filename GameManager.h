@@ -1,5 +1,5 @@
 #pragma once
-class GameMng
+class GameMng : public Singleton<GameMng>
 {
 public:
 	GameMng();
@@ -9,6 +9,7 @@ public:
 	Bullet bullets[D_BULLET_MAX];
 	Enemy enemys[D_ENEMY_MAX];
 	Effect effects[D_EFFECT_MAX];
+	Text text;
 
 	DWORD createEnemyTime;
 
