@@ -17,6 +17,6 @@ void Enemy::Move()
 
 void Enemy::Clipping()
 {
-	if (y >= 30)
+	if (y >= 29)
 		Disable();
 }

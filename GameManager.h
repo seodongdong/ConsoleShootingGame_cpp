@@ -16,9 +16,10 @@ public:
 	void Update();
 	void Draw();
 
+	void BulletEnemyCollision();
+
 	void CreateBullet(int x, int y);
 	void CreateEnemy(int x, int y);
 	void CreateEffect(int x, int y);
 
-	void BulletEnemyCollision();
 };

@@ -13,8 +13,8 @@
 #include "Bullet.h"
 #include "Enemy.h"
 #include "Effect.h"
-#include "Text.h"
 
+#include "Text.h"
 
 #include "GameManager.h"		// 항상 맨 밑에 호출해야함. (그래야 인식 가능)
 
