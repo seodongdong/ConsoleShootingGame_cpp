@@ -17,7 +17,9 @@ void Player::Update()
 	Unit::Update();		// 부모클래스의 함수를 호출. (같은 내용일 때)
 
 	if (GetAsyncKeyState(VK_SPACE))
-		GameMng::GetIns()->CreateBullet(x, y);
+	{
+		((GameState*)GameMng::GetIns()->stateCtrl.m_pCurState)->CreateBullet(x, y);
+	}
 }
 
 void Player::Move()

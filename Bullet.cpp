@@ -13,8 +13,7 @@ Bullet::~Bullet()
 
 void Bullet::Move()
 {
-	//if (isAlive)
-		y--;
+	y--;
 }
 
 void Bullet::Clipping()

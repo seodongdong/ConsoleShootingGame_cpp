@@ -16,6 +16,12 @@
 
 #include "Text.h"
 
+#include "State.h"
+#include "StateCtrl.h"
+
+#include "GameState.h"
+#include "MenuState.h"
+
 #include "GameManager.h"		// 항상 맨 밑에 호출해야함. (그래야 인식 가능)
 
 void Init();

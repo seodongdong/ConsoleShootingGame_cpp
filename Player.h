@@ -1,6 +1,7 @@
 #pragma once
 class Player : public Unit	// public(접근제어자) 상속받을 클래스 이름
 {
+
 public:
 	Player();
 	~Player();
