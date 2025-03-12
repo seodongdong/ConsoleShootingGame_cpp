@@ -7,6 +7,7 @@ public:
 	~Player();
 
 	void Update() override;		// 재정의 (부모클래스의 내용과 달라지기 때문에
+	void Draw() override;
 	void Move() override;
 	void Clipping() override;
 };

@@ -13,6 +13,8 @@ public:
 
 	DWORD createEnemyTime;
 
+
+
 	void Start();
 	void Update();
 	void Draw();
@@ -23,4 +25,6 @@ public:
 	void CreateBullet(int x, int y);
 	void CreateEnemy(int x, int y);
 	void CreateEffect(int x, int y);
+
+
 };

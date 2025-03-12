@@ -22,6 +22,39 @@ void Player::Update()
 	}
 }
 
+void Player::Draw()
+{
+	if (isAlive)
+		DrawChar(x, y, body, fColor, bColor);
+
+	if (GetAsyncKeyState(VK_SPACE))  // 스페이스바 눌리면
+	{
+		if (level == 1)
+		{
+			// 플레이어 아래(몸체 밑)에 출력하기
+			DrawStr(x - 1, y + 1, "빵!", YELLOW, BLACK);  // 발사 효과
+		}
+		if (level == 2)
+		{
+			DrawStr(x - 2, y + 1, "빵빵!", YELLOW, BLACK);  // 발사 효과
+		}
+		if (level == 3)
+		{
+			DrawStr(x - 3, y + 1, "빵빵빵!", YELLOW, BLACK);  // 발사 효과
+		}
+	}
+	else
+	{
+		// 안 누르면 아무것도 안 그림
+		DrawStr(x, y + 1, " ", BLACK, BLACK);
+	}
+
+	if (GetAsyncKeyState('A'))
+		DrawStr(x - 2, y, "<", YELLOW, BLACK);
+	if (GetAsyncKeyState('D'))
+		DrawStr(x + 2, y, ">", YELLOW, BLACK);
+}
+
 void Player::Move()
 {
 	if (GetAsyncKeyState('W'))

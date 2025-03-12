@@ -5,8 +5,8 @@ public:
 	Text();
 	~Text();
 
-	std::string str;
+	std::string str;	// score
+	std::string str2;	// level
 
 	void Draw() override;
-
 };

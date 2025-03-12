@@ -27,6 +27,7 @@ void Unit::Draw()
 {
 	if (isAlive)
 		DrawChar(x, y, body, fColor, bColor);
+
 }
 
 void Unit::Move()

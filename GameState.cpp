@@ -85,9 +85,20 @@ void GameState::BulletEnemyCollision()
 				if (enemys[j].isAlive && bullets[i].x == enemys[j].x &&
 					(bullets[i].y == enemys[j].y || bullets[i].y - 1 == enemys[j].y))
 				{
+					score++;
+					if (score == 20)
+					{
+						level++;
+					}
+					if (score == 50)
+					{
+						level++;
+					}
+
 					CreateEffect(enemys[j].x, enemys[j].y);		// Effect
 					bullets[i].Disable();
 					enemys[j].Disable();
+					
 					break;
 				}
 			}
@@ -97,12 +108,47 @@ void GameState::BulletEnemyCollision()
 
 void GameState::CreateBullet(int x, int y)
 {
+	int bulletsCount = 1;	// 총알 개수
+
+	if (level == 1)
+		bulletsCount = 1;
+	else if (level == 2)
+		bulletsCount = 2;
+	else if (level == 3)
+		bulletsCount = 3;
+
+	int created = 0;	// 생성된 총알 개수
+
 	for (int i = 0; i < D_BULLET_MAX; i++)
 	{
-		if (bullets[i].isAlive == false)
+		if (!bullets[i].isAlive)
 		{
-			bullets[i].Enable(x, y);
-			break;
+			// 각 총알 좌표 위치 조정
+			if (level == 1)
+			{
+				bullets[i].Enable(x, y);
+			}     
+			else if (level == 2)
+			{
+				if (created == 0)
+					bullets[i].Enable(x - 1, y);
+				else if (created == 1)
+					bullets[i].Enable(x + 1, y);
+			}
+			else if (level == 3)
+			{
+				if (created == 0)
+					bullets[i].Enable(x - 1, y);
+				else if (created == 1)
+					bullets[i].Enable(x, y);
+				else if (created == 2)
+					bullets[i].Enable(x + 1, y);
+			}
+
+			created++;
+
+			if (created >= bulletsCount)	// 생성된 총알 개수가 총알 개수보다 많으면
+				return;
 		}
 	}
 }
