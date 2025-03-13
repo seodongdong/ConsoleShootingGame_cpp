@@ -14,6 +14,9 @@ void Init()
 
 	SetConsoleCursorInfo(hScreen[0], &cci);
 	SetConsoleCursorInfo(hScreen[1], &cci);
+
+	GameMng::GetIns();
+	GameMng::GetIns()->Init();
 }
 void Update()
 {

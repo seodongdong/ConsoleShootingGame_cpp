@@ -30,7 +30,7 @@ void Text::Draw()
 		ss << "LEVEL " << level;  // level °»½Å
 		str2 = ss.str();
 
-		DrawStr(x, y + 1, str2.c_str(), fColor, bColor);
+		DrawStr(x + 18, y, str2.c_str(), fColor, bColor);
 	}
 
 }

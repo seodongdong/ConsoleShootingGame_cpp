@@ -42,7 +42,7 @@ void GameState::Update()
 	{
 		// 20½Ã 10ºÐ 0.5ÃÊ 
 		createEnemyTime = GetTickCount() + 100;
-		CreateEnemy(rand() & 120, -1);
+		CreateEnemy(rand() & 120, 0);
 	}
 
 	BulletEnemyCollision();
@@ -85,19 +85,19 @@ void GameState::BulletEnemyCollision()
 				if (enemys[j].isAlive && bullets[i].x == enemys[j].x &&
 					(bullets[i].y == enemys[j].y || bullets[i].y - 1 == enemys[j].y))
 				{
-					score++;
-					if (score == 20)
-					{
-						level++;
-					}
-					if (score == 50)
-					{
-						level++;
-					}
-
 					CreateEffect(enemys[j].x, enemys[j].y);		// Effect
 					bullets[i].Disable();
 					enemys[j].Disable();
+
+					score++;
+					if (score == 150)
+					{
+						level++;
+					}
+					if (score == 300)
+					{
+						level++;
+					}
 					
 					break;
 				}
@@ -127,22 +127,39 @@ void GameState::CreateBullet(int x, int y)
 			if (level == 1)
 			{
 				bullets[i].Enable(x, y);
+				GameMng::GetIns()->bulletSnd.Play();
 			}     
 			else if (level == 2)
 			{
 				if (created == 0)
+				{
 					bullets[i].Enable(x - 1, y);
+					GameMng::GetIns()->bulletSnd.Play();
+				}
 				else if (created == 1)
+				{
 					bullets[i].Enable(x + 1, y);
+					GameMng::GetIns()->bulletSnd.Play();
+				}
 			}
 			else if (level == 3)
 			{
 				if (created == 0)
+				{
 					bullets[i].Enable(x - 1, y);
+					GameMng::GetIns()->bulletSnd.Play();
+				}
 				else if (created == 1)
+				{
 					bullets[i].Enable(x, y);
+					GameMng::GetIns()->bulletSnd.Play();
+				}
 				else if (created == 2)
+				{
 					bullets[i].Enable(x + 1, y);
+					GameMng::GetIns()->bulletSnd.Play();
+				}
+
 			}
 
 			created++;

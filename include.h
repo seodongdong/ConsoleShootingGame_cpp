@@ -1,9 +1,11 @@
 #include <stdio.h>
-#include <Windows.h>	//win32 API
+#include <Windows.h>	// win32 API
 #include <stdlib.h>
 #include <time.h>
 #include <string>
 #include <sstream>
+#include <fmod.hpp>		// cpp 전용
+
 #include "Define.h"
 #include "Singleton.h"
 
@@ -12,12 +14,14 @@
 #include "Player.h"
 #include "Bullet.h"
 #include "Enemy.h"
-#include "Effect.h"
+#include "Effect.h"		// 이펙트
 
-#include "Text.h"
+#include "Text.h"		// 텍스트
 
 #include "State.h"
 #include "StateCtrl.h"
+
+#include "Sound.h"		// 효과음
 
 #include "GameState.h"
 #include "MenuState.h"
