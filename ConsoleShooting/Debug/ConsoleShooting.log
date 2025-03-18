@@ -1,1 +1,2 @@
-﻿LINK : fatal error LNK1104: 'fmod_vc.lib' 파일을 열 수 없습니다.
+﻿  GameState.cpp
+  ConsoleShooting.vcxproj -> C:\Users\USER\Documents\GitHub\ConsoleShootingGame_cpp\Debug\ConsoleShooting.exe
