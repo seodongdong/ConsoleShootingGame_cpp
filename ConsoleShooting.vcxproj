@@ -72,15 +72,17 @@
   <PropertyGroup Label="UserMacros" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
     <ExternalIncludePath>./inc;$(ExternalIncludePath)</ExternalIncludePath>
-    <LibraryPath>./lib/x86;$(LibraryPath)</LibraryPath>
+    <LibraryPath>C:\Program Files (x86)\FMOD SoundSystem\FMOD Studio API Windows\api\core\lib</LibraryPath>
+    <IncludePath>C:\Program Files (x86)\FMOD SoundSystem\FMOD Studio API Windows\api\core\inc;$(IncludePath)</IncludePath>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
     <ExternalIncludePath>./inc;$(ExternalIncludePath)</ExternalIncludePath>
     <LibraryPath>./lib/x86;$(LibraryPath)</LibraryPath>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
-    <ExternalIncludePath>./inc;$(ExternalIncludePath)</ExternalIncludePath>
-    <LibraryPath>./lib/x86;$(LibraryPath)</LibraryPath>
+    <ExternalIncludePath>C:\Program Files (x86)\FMOD SoundSystem\FMOD Studio API Windows\api\core\inc</ExternalIncludePath>
+    <LibraryPath>C:\Program Files (x86)\FMOD SoundSystem\FMOD Studio API Windows\api\core\lib</LibraryPath>
+    <IncludePath>C:\Program Files (x86)\FMOD SoundSystem\FMOD Studio API Windows\api\core\inc;$(IncludePath)</IncludePath>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
     <ExternalIncludePath>./inc;$(ExternalIncludePath)</ExternalIncludePath>
@@ -97,7 +99,7 @@
       <SubSystem>Console</SubSystem>
       <GenerateDebugInformation>true</GenerateDebugInformation>
       <AdditionalDependencies>fmod_vc.lib;%(AdditionalDependencies)</AdditionalDependencies>
-      <AdditionalLibraryDirectories>＄（ｉｎｃｌｕｄｅ）;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalLibraryDirectories>C:\Users\ksy92\Documents\GitHub\ConsoleShootingGame_cpp\Debug</AdditionalLibraryDirectories>
     </Link>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
@@ -128,6 +130,7 @@
       <SubSystem>Console</SubSystem>
       <GenerateDebugInformation>true</GenerateDebugInformation>
       <AdditionalDependencies>fmod_vc.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalLibraryDirectories>C:\Users\ksy92\Documents\GitHub\ConsoleShootingGame_cpp\Debug</AdditionalLibraryDirectories>
     </Link>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">

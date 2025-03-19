@@ -35,7 +35,8 @@ Effect::~Effect()
 
 void Effect::Update()
 {
-	if (isAlive && indexUpdateTime <= GetTickCount())
+	if (isAlive && indexUpdateTime <= 
+		GetTickCount())
 	{
 		index++;
 		indexUpdateTime = GetTickCount() + 150;

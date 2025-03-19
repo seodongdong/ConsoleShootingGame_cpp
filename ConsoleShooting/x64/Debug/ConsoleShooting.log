@@ -1,3 +1,2 @@
-﻿  MenuState.cpp
-C:\Users\User\Documents\GitHub\ConsoleShootingGame_cpp\MenuState.cpp(4,19): warning C4244: '초기화 중': 'DWORD'에서 'float'(으)로 변환하면서 데이터가 손실될 수 있습니다.
-  ConsoleShooting.vcxproj -> C:\Users\User\Documents\GitHub\ConsoleShootingGame_cpp\x64\Debug\ConsoleShooting.exe
+﻿  Effect.cpp
+LINK : fatal error LNK1104: 'kernel32.lib' 파일을 열 수 없습니다.
