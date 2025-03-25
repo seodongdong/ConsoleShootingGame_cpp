@@ -13,6 +13,8 @@ public:		// 접근제어자 : private(내 클래스 안에서만),
 	WORD fColor;
 	WORD bColor;
 
+	int id;
+
 	virtual void Update();		// virtual = 가상함수, 자식 클래스 안에서 함수의 내용을 바꿔도 된다는 뜻
 	virtual void Draw();
 

@@ -38,6 +38,11 @@ void GameState::Update()
 		effects[i].Update();
 	}
 
+	//for (int i = 0; i < gameobjects.size(); i++)
+	//{
+	//	gameobjects[i]->Update;
+	//}
+
 	if (createEnemyTime < GetTickCount())
 	{
 		// 20시 10분 0.5초 
@@ -57,6 +62,11 @@ void GameState::Draw()
 		bullets[i].Draw();
 	}
 
+	//for (int i = 0; i < bullets.size(); i++)
+	//{
+	//	bullets[i]->Draw();
+	//}
+
 	for (int i = 0; i < D_ENEMY_MAX; i++)	// Enemy
 	{
 		enemys[i].Draw();
@@ -66,6 +76,11 @@ void GameState::Draw()
 	{
 		effects[i].Draw();
 	}
+
+	//for (int i = 0; i < gameobjects.size(); i++)
+	//{
+	//	gameobjects[i]->Draw;
+	//}
 
 	text.Draw();
 }
@@ -104,6 +119,25 @@ void GameState::BulletEnemyCollision()
 			}
 		}
 	}
+
+	//for (int i = 0; i < bullets.size(); i++)
+	//{
+	//	if (bullets[i]->isAlive)
+	//	{
+	//		for (int j = 0; j < enemys.size(); j++)
+	//		{
+	//			if (enemys[j]->isAlive && bullets[i]->x == enemys[j]->x &&
+	//				(bullets[i]->y == enemys[j]->y || bullets[i]->y - 1 == enemys[j]->y))
+	//			{
+	//				CreateEffect(enemys[j]->x, enemys[j]->y);		// Effect
+	//				bullets[i]->Disable();
+	//				enemys[j]->Disable();
+	//				
+	//				break;
+	//			}
+	//		}
+	//	}
+	//}
 }
 
 void GameState::CreateBullet(int x, int y)
@@ -121,6 +155,10 @@ void GameState::CreateBullet(int x, int y)
 
 	for (int i = 0; i < D_BULLET_MAX; i++)
 	{
+		//bullets.push_back(new Bullet());
+		//bullets[i]->x = 10;
+		
+
 		if (!bullets[i].isAlive)
 		{
 			// 각 총알 좌표 위치 조정
@@ -139,7 +177,7 @@ void GameState::CreateBullet(int x, int y)
 				else if (created == 1)
 				{
 					bullets[i].Enable(x + 1, y);
-					GameMng::GetIns()->bulletSnd.Play();
+					//GameMng::GetIns()->bulletSnd.Play();
 				}
 			}
 			else if (level == 3)
@@ -152,12 +190,12 @@ void GameState::CreateBullet(int x, int y)
 				else if (created == 1)
 				{
 					bullets[i].Enable(x, y);
-					GameMng::GetIns()->bulletSnd.Play();
+					//GameMng::GetIns()->bulletSnd.Play();
 				}
 				else if (created == 2)
 				{
 					bullets[i].Enable(x + 1, y);
-					GameMng::GetIns()->bulletSnd.Play();
+					//GameMng::GetIns()->bulletSnd.Play();
 				}
 
 			}
@@ -168,6 +206,19 @@ void GameState::CreateBullet(int x, int y)
 				return;
 		}
 	}
+
+	//for (int i = 0; i < bullets.size(); i++)
+	//{
+	//	if (bullets[i]->isAlive == false)
+	//	{
+	//		bullets[i]->Enable(x, y);
+	//		return;
+	//	}
+	//}
+
+	//Bullet* bullets = new Bullet();
+	//bullet->Enable(x,y);
+	//bullets.push_back(bullet);
 }
 
 void GameState::CreateEnemy(int x, int y)
@@ -180,6 +231,19 @@ void GameState::CreateEnemy(int x, int y)
 			break;
 		}
 	}
+
+	//for (int i = 0; i < enemys.size(); i++)
+	//{
+	//	if (enemys[i]->isAlive == false)
+	//	{
+	//		enemys[i]->Enable(x, y);
+	//		break;
+	//	}
+	//}
+
+	//Enemy* enemys = new Enemy();
+	//enemy->Enable(x,y);
+	//enemys.push_back(enemy);
 }
 
 void GameState::CreateEffect(int x, int y)
@@ -192,4 +256,56 @@ void GameState::CreateEffect(int x, int y)
 			break;
 		}
 	}
+
+	//for (int i = 0; i < effects.size(); i++)
+	//{
+	//	if (effects[i]->isAlive == false)
+	//	{
+	//		effects[i]->Enable(x, y);
+	//		break;
+	//	}
+	//}
+
+	//Effect* effects = new Effect();
+	//effect->Enable(x,y);
+	//effects.push_back(effect);
 }
+
+	//void CreateObject(ID id, int x, int y);
+	//{
+	//	if (id == ID::NONE)
+	//	{
+	//		return;
+	//	}
+
+	//	for (int i = 0; i < gameobjects.size(); i++)
+	//	{
+	//		if (gameobjects[i]->id == id && gameobjects[i]->isAlive == false)
+	//		{
+	//			gameobjects[i]->Enable(x, y);
+	//			
+	//			return;
+	//		}
+	//	}
+
+	//	switch (id)
+	//	{
+	//	case BULLET:
+	//		unit = new Bullet();
+	//		break;
+	//	
+	//	case ENEMY;
+	//		unit = new ENEMY();
+	//		break;
+
+	//	case EFFECT;
+	//		unit = new EFFECT();
+	//		break;
+	//	}
+	//
+
+	// if (unit)
+	// {
+	//		unit -> Enable(x, y);
+	//		gameobjects.push_back();
+	// }

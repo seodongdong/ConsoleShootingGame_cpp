@@ -28,6 +28,11 @@
 
 #include "GameManager.h"		// 항상 맨 밑에 호출해야함. (그래야 인식 가능)
 
+// STL	
+
+#include <vector>		// 동적 배열 방식의 리스트
+// #include <list>
+
 void Init();
 void Update();
 void Draw();

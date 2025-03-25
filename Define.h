@@ -24,6 +24,11 @@ enum STATE	  // 순차적인 값은 define보다 enum이 간단함.
    MENU, GAME, MAX  
 };  
 
+//enum ID
+//{
+//	NONE, BULLET, ENEMY, EFFECT
+//};
+
 #define D_BULLET_MAX 50  
 #define D_ENEMY_MAX 50  
 #define D_EFFECT_MAX 50  

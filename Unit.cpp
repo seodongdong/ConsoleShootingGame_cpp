@@ -8,6 +8,8 @@ Unit::Unit()
 	fColor = WHITE;
 	bColor = BLACK;
 	body = ' ';
+
+	id = ID::NONE;
 }
 
 Unit::~Unit()

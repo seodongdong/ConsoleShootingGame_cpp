@@ -1,2 +1,57 @@
-﻿  Effect.cpp
-LINK : fatal error LNK1104: 'kernel32.lib' 파일을 열 수 없습니다.
+﻿  Bullet.cpp
+  ConsoleFramework.cpp
+C:\Users\User\Documents\GitHub\ConsoleShootingGame_cpp\include.h(7,10): error C1083: 포함 파일을 열 수 없습니다. 'fmod.hpp': No such file or directory
+  (소스 파일 'Bullet.cpp'을(를) 컴파일하는 중)
+  
+C:\Users\User\Documents\GitHub\ConsoleShootingGame_cpp\include.h(7,10): error C1083: 포함 파일을 열 수 없습니다. 'fmod.hpp': No such file or directory
+  (소스 파일 'ConsoleFramework.cpp'을(를) 컴파일하는 중)
+  
+  Effect.cpp
+C:\Users\User\Documents\GitHub\ConsoleShootingGame_cpp\include.h(7,10): error C1083: 포함 파일을 열 수 없습니다. 'fmod.hpp': No such file or directory
+  (소스 파일 'Effect.cpp'을(를) 컴파일하는 중)
+  
+  Enemy.cpp
+C:\Users\User\Documents\GitHub\ConsoleShootingGame_cpp\include.h(7,10): error C1083: 포함 파일을 열 수 없습니다. 'fmod.hpp': No such file or directory
+  (소스 파일 'Enemy.cpp'을(를) 컴파일하는 중)
+  
+  GameManager.cpp
+C:\Users\User\Documents\GitHub\ConsoleShootingGame_cpp\include.h(7,10): error C1083: 포함 파일을 열 수 없습니다. 'fmod.hpp': No such file or directory
+  (소스 파일 'GameManager.cpp'을(를) 컴파일하는 중)
+  
+  GameState.cpp
+C:\Users\User\Documents\GitHub\ConsoleShootingGame_cpp\include.h(7,10): error C1083: 포함 파일을 열 수 없습니다. 'fmod.hpp': No such file or directory
+  (소스 파일 'GameState.cpp'을(를) 컴파일하는 중)
+  
+  main.cpp
+C:\Users\User\Documents\GitHub\ConsoleShootingGame_cpp\include.h(7,10): error C1083: 포함 파일을 열 수 없습니다. 'fmod.hpp': No such file or directory
+  (소스 파일 'main.cpp'을(를) 컴파일하는 중)
+  
+  MenuState.cpp
+C:\Users\User\Documents\GitHub\ConsoleShootingGame_cpp\include.h(7,10): error C1083: 포함 파일을 열 수 없습니다. 'fmod.hpp': No such file or directory
+  (소스 파일 'MenuState.cpp'을(를) 컴파일하는 중)
+  
+  Player.cpp
+C:\Users\User\Documents\GitHub\ConsoleShootingGame_cpp\include.h(7,10): error C1083: 포함 파일을 열 수 없습니다. 'fmod.hpp': No such file or directory
+  (소스 파일 'Player.cpp'을(를) 컴파일하는 중)
+  
+  Sound.cpp
+C:\Users\User\Documents\GitHub\ConsoleShootingGame_cpp\include.h(7,10): error C1083: 포함 파일을 열 수 없습니다. 'fmod.hpp': No such file or directory
+  (소스 파일 'Sound.cpp'을(를) 컴파일하는 중)
+  
+  State.cpp
+C:\Users\User\Documents\GitHub\ConsoleShootingGame_cpp\include.h(7,10): error C1083: 포함 파일을 열 수 없습니다. 'fmod.hpp': No such file or directory
+  (소스 파일 'State.cpp'을(를) 컴파일하는 중)
+  
+  StateCtrl.cpp
+C:\Users\User\Documents\GitHub\ConsoleShootingGame_cpp\Include.h(7,10): error C1083: 포함 파일을 열 수 없습니다. 'fmod.hpp': No such file or directory
+  (소스 파일 'StateCtrl.cpp'을(를) 컴파일하는 중)
+  
+  text.cpp
+C:\Users\User\Documents\GitHub\ConsoleShootingGame_cpp\include.h(7,10): error C1083: 포함 파일을 열 수 없습니다. 'fmod.hpp': No such file or directory
+  (소스 파일 'text.cpp'을(를) 컴파일하는 중)
+  
+  Unit.cpp
+C:\Users\User\Documents\GitHub\ConsoleShootingGame_cpp\include.h(7,10): error C1083: 포함 파일을 열 수 없습니다. 'fmod.hpp': No such file or directory
+  (소스 파일 'Unit.cpp'을(를) 컴파일하는 중)
+  
+  코드를 생성하고 있습니다...

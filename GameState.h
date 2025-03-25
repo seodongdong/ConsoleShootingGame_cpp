@@ -9,6 +9,13 @@ public:
 	Bullet bullets[D_BULLET_MAX];
 	Enemy enemys[D_ENEMY_MAX];
 	Effect effects[D_EFFECT_MAX];
+
+	//std::vector<Bullet*> bullets;
+	//std::vector<Enemy*> enemys;
+	//std::vector<Effect*> effects;
+
+	//std::vector<Unit*> gameobjects;
+
 	Text text;
 
 	DWORD createEnemyTime;
@@ -26,5 +33,5 @@ public:
 	void CreateEnemy(int x, int y);
 	void CreateEffect(int x, int y);
 
-
+	//void CreateObject(ID id, int x, int y);
 };

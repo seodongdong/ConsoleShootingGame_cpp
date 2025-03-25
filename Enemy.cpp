@@ -4,6 +4,7 @@ Enemy::Enemy()
 {
 	fColor = RED;
 	bColor = RED;
+	id = ID::ENEMY;
 }
 
 Enemy::~Enemy()
